@@ -63,14 +63,10 @@ For the finished Jenkinsfile for this stage, remove the `sh 'java -version'` ste
 ```
 pipeline {
   agent { label 'nodejs-app' }
-  options { 
-    buildDiscarder(logRotator(numToKeepStr: '2'))
-    skipDefaultCheckout true
-  }
   stages {
     stage('Test') {
       steps {
-        checkout scm
+        sh 'java -version'
         container('nodejs') {
           echo 'Hello World!'   
           sh 'node --version'
@@ -81,4 +77,4 @@ pipeline {
 }
 ```
 
-You may proceed to the next lab [*Lab 9. The options Directive*](./options-directive.md) or head back to the main list of the [**labs**](./README.md#workshop-labs) when you are ready.
+You may proceed to the next lab [*Lab 3. The options Directive*](./options-directive.md) or head back to the main list of the [**labs**](./README.md#workshop-labs) when you are ready.
