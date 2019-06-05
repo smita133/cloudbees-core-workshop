@@ -59,7 +59,7 @@ pipeline {
 >**NOTE:** The sh 'java -version' step before the `container('nodejs')` completed successfully this time because it used the default `jnlp` container to execute any steps not in the `container` block.
 
 ### Finished Jenkinsfile for *Stage Specific Agents*
-For the finished Jenkinsfile for this stage, remove the `sh 'jave -version'` step and make sure you copy the Pipeline as below and replace yours.
+For the finished Jenkinsfile for this stage, remove the `sh 'java -version'` step and make sure you copy the Pipeline as below and replace yours.
 ```
 pipeline {
   agent { label 'nodejs-app' }
