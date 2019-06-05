@@ -11,8 +11,8 @@ Pipeline Template Catalogs provide version controlled paramaterized templates fo
 4. Fill out the template parameters:
    1. **Repository Owner**: the GitHub Organization your created for the CloudBees Core workshop
    2. **GitHub Credential ID**: select the *username/password* credential you created for the the CloudBees Core workshop - it will show up as - [GitHub username]/******
-   3. GCP Project: na-csa-msuarez
-   4. HostName URL: cb-workshops.com
+   3. **GCP Project**: na-csa-msuarez
+   4. **HostName URL**: cb-workshops.com
    4. Click the **Save** button<p><img src="img/catalog/template_parameters.png" width=800/>
 5. You may need to refresh the Multibranch job screen, but eventually you should have two jobs - one for the **development** branch and one for the **master** branch<p><img src="img/catalog/two_jobs.png" width=800/>
 
