@@ -37,8 +37,8 @@ Detailed setup instructions are available at **[Setup](Setup.md)**
 * Lab 3. [Using the `options` directive](./options-directive.md)
 * Lab 4. [Conditional Execution using the `when` directive](./conditional-when.md)
 * Lab 5. [Custom Pipeline Pod Templates](./custom-pipeline-pod-templates.md)
-* Lab 6. [CloudBees Pipeline Template Catalogs](./catalog-templates.md)
-* Lab 7. [CloudBees Cross Team Collaboration](./cross-team-collaboration.md)
+* Lab 6. [CloudBees Cross Team Collaboration](./cross-team-collaboration.md)
+* Lab 7. [CloudBees Pipeline Template Catalogs](./catalog-templates.md)
 
 
 # Disclaimer
