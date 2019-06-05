@@ -48,7 +48,10 @@ Create a Github organization to use for this workshop:
 1. On Github navigate to **Organizations**: https://github.com/settings/organizations (after logging in) 
 2. Click on **New Organization** <p><img src="img/setup/setup-github-new-org.png" width=550/>
 3. Fill in the **Organization Name**, **Billing Email**, and click on **Create Organization**<p><img src="img/setup/setup-create-org.png" width=400/>
-4. On the **Invite organization members** - just click the **Finish** button.
+4. On the **Invite  members** - just click the **Continue** button.
+5. On the **Organization details** - just click the **Submit** button.
+
+
 
 >NOTE: Even though you have to provide an email for billing, you will not be charged anything as long as you choose the free option.
 
