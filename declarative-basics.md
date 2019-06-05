@@ -119,7 +119,7 @@ pipeline {
 ...
 Running shell script
 + java -version
-openjdk version "1.8.0_171"
+openjdk version "1.8.0_201"
 ...
 ```
   
