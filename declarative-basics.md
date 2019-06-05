@@ -113,7 +113,7 @@ pipeline {
   ...
   ```
 
-   iv. The agent has a Java version of `1.8.0_171`:
+   iv. The agent has a Java version of `1.8.0_201`:
 
 ```
 ...
