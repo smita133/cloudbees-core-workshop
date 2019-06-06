@@ -117,7 +117,7 @@ pipeline {
 
 ```
 ...
-Running shell script
+[Pipeline] sh
 + java -version
 openjdk version "1.8.0_191"
 ...
