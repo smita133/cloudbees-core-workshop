@@ -113,13 +113,13 @@ pipeline {
   ...
   ```
 
-   iv. The agent has a Java version of `1.8.0_201`:
+   iv. The agent has a Java version of `1.8.0_191`:
 
 ```
 ...
 Running shell script
 + java -version
-openjdk version "1.8.0_201"
+openjdk version "1.8.0_191"
 ...
 ```
   
