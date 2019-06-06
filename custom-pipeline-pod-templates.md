@@ -31,7 +31,7 @@ spec:
 ```
   agent {
     kubernetes {
-      label 'nodejs-app-pod-2'
+      label 'nodejs-app-pod'
       yamlFile 'nodejs-pod.yaml'
     }
   }
