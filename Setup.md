@@ -27,7 +27,7 @@ Next, everyone will get their own Jenkins masters referred to as a Team Master.
 7. Finally, click the **Create team** button. 
 8. While your master is being  created (**it takes anywhere from 2-3 minutes to provision your Team Master**), move onto the next section **Create a GitHub.com user account**
 
-## Create a GitHub.com user account
+## Create a GitHub.com user account - skip if already have a personal GitHub Account
 Setup a GitHub.com user account that will be used later in this workshop. If you have an existing GitHub.com account you will be able to use it if you are comfortable using that account to create a GitHub Organization later in the workshop.
 
 1. Visit https://github.com/join and fill in the required fields to create a user account.
