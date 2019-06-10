@@ -14,7 +14,7 @@ The Cross Team Collaboration feature has a configurable router for routing event
 
 ```groovy
   triggers {
-    eventTrigger simpleMatch('hello-api-deploy-event')
+    eventTrigger simpleMatch('hello-api-eli')
   }
 ```
 
@@ -25,7 +25,7 @@ The Cross Team Collaboration feature has a configurable router for routing event
 Now I will set up a Multibranch Pipeline project for the https://github.com/mluyo3414org/helloworld-api repository and add the following [simple event](https://go.cloudbees.com/docs/cloudbees-core/cloud-admin-guide/cross-team-collaboration/#cross-team-event-types) to the **Deploy** stage of the **helloworld-api** `Jenksfile` : 
 
 ```
-publishEvent simpleEvent('hello-api-deploy-event')
+publishEvent simpleEvent('hello-api-eli')
 ```
 
 That event will be published **across all Team Masters in our Workshop cluster** via the CloudBees Operations Center event router causing everyones' **helloworld-nodejs** Pipelines to be triggered. 
@@ -45,7 +45,7 @@ pipeline {
     skipDefaultCheckout true
   }
   triggers {
-    eventTrigger simpleMatch('hello-api-deploy-event')
+    eventTrigger simpleMatch('hello-api-eli')
   }
   stages {
     stage('Test') {
