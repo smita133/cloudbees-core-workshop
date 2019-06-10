@@ -11,7 +11,7 @@ Pipeline Template Catalogs provide version controlled paramaterized templates fo
 4. Fill out the template parameters:
    1. **Repository Owner**: the GitHub Organization your created for the CloudBees Core workshop
    2. **GitHub Credential ID**: select the *username/password* credential you created for the the CloudBees Core workshop - it will show up as - [GitHub username]/******
-   3. Leave GCP Project as is.
+   3. Leave **GCP Project** as is.
    4. Click the **Save** button. <p><img src="img/catalog/template_parameters.png" width=800/>
   
 5. The initial scan won't find any branches because you have to add the [custom markerfile](https://go.cloudbees.com/docs/cloudbees-core/cloud-admin-guide/pipeline/#_multibranch_pipeline_options_in_template_yaml) `.nodejs-app` to any branch that you want a job to be created. The [template we are using has a `markerFile` parameter set to `.nodejs-app`](https://github.com/cloudbees-days/pipeline-template-catalog/blob/master/templates/nodejs-app/template.yaml#L29), so we need to add that file to any repo we want to build. Start by adding it to the **development** branch of your forked copy of the **helloworld-nodejs** repository.
