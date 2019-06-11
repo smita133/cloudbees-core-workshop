@@ -35,13 +35,14 @@ pipeline {
 ### Finished Jenkinsfile for *The options Directive*
 ```
 pipeline {
-  agent { label 'nodejs-app' }
   options { 
     buildDiscarder(logRotator(numToKeepStr: '2'))
     skipDefaultCheckout true
   }
+  agent none
   stages {
     stage('Test') {
+      agent { label 'nodejs-app' }
       steps {
         checkout scm
         container('nodejs') {
