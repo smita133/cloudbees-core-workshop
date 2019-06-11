@@ -6,6 +6,7 @@ The [`options` directive](https://jenkins.io/doc/book/pipeline/syntax/#options) 
 
 ```groovy 
 pipeline {
+  agent none
   options { 
     buildDiscarder(logRotator(numToKeepStr: '2'))
     skipDefaultCheckout true
@@ -35,11 +36,11 @@ pipeline {
 ### Finished Jenkinsfile for *The options Directive*
 ```
 pipeline {
+  agent none
   options { 
     buildDiscarder(logRotator(numToKeepStr: '2'))
     skipDefaultCheckout true
   }
-  agent none
   stages {
     stage('Test') {
       agent { label 'nodejs-app' }
