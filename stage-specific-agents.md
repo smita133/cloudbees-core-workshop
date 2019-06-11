@@ -24,9 +24,10 @@ We will use the Kubernetes plugin [Pipeline `container` block](https://jenkins.i
 
 ```groovy
 pipeline {
-  agent { label 'nodejs-app' }
+  agent none
   stages {
     stage('Test') {
+      agent { label 'nodejs-app' }
       steps {
         container('nodejs') {
           echo 'Hello World!'   
@@ -45,9 +46,10 @@ pipeline {
 6. We will fix the error in the **Test** `stage` we added above by replacing the `sh 'java -version'` step with the `sh 'node --version'` step and moving the `sh 'java -version` step above the `container` block in the `Jenkinsfile` file in the **development** branch of your forked **helloworld-nodejs** repository so the entire pipeline looks like the following:
 ```
 pipeline {
-  agent { label 'nodejs-app' }
+  agent none
   stages {
     stage('Test') {
+      agent { label 'nodejs-app' }
       steps {
         sh 'java -version'
         container('nodejs') {
@@ -59,6 +61,7 @@ pipeline {
   }
 }
 ```
+```
 7. Commit the changes and the **helloworld-nodejs** job will run and it will complete successfully with the following output: <p><img src="img/intro/k8s_agent_success.png" width=800/>
 
 >**NOTE:** The sh 'java -version' step before the `container('nodejs')` completed successfully this time because it used the default `jnlp` container to execute any steps not in the `container` block.
@@ -67,9 +70,10 @@ pipeline {
 For the finished Jenkinsfile for this stage, remove the `sh 'java -version'` step and make sure you copy the Pipeline as below and replace yours.
 ```
 pipeline {
-  agent { label 'nodejs-app' }
+  agent none
   stages {
     stage('Test') {
+      agent { label 'nodejs-app' }
       steps {
         sh 'java -version'
         container('nodejs') {
