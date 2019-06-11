@@ -60,7 +60,7 @@ pipeline {
     }
   }
 }
-```
+
 ```
 7. Commit the changes and the **helloworld-nodejs** job will run and it will complete successfully with the following output: <p><img src="img/intro/k8s_agent_success.png" width=800/>
 
