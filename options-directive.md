@@ -6,7 +6,6 @@ The [`options` directive](https://jenkins.io/doc/book/pipeline/syntax/#options) 
 
 ```groovy 
 pipeline {
-  agent { label 'nodejs-app' }
   options { 
     buildDiscarder(logRotator(numToKeepStr: '2'))
     skipDefaultCheckout true
